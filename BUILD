@@ -3,6 +3,7 @@ load("//tools:mygen.bzl", "cc_mygen_library")
 cc_mygen_library(
     name = "mylib",
     srcs = [":mydef.txt"],
+    generated = ["main.c", "another.c", "another.h"]
 )
 
 cc_binary(
